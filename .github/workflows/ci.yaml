@@ -24,8 +24,8 @@ jobs:
 
     - name: Build Image
       run: |
-        docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/payment-app:${{ github.sha }} .
+        docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/payment-app:${IMAGE_TAG} .
 
     - name: Push Image
       run: |
-        docker push ${{ secrets.ACR_LOGIN_SERVER }}/payment-app:${{ github.sha }}
+        docker push ${{ secrets.ACR_LOGIN_SERVER }}/payment-app:${IMAGE_TAG}

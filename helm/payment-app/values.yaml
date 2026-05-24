@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: acrgitopssandbox.azurecr.io/payment-app
+  repository: acrdev8912.azurecr.io/payment-app
   tag: latest
 
 service:
